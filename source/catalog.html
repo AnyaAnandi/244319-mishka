@@ -1,112 +1,98 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="utf-8">
-		<title>Mishka-каталог товаров</title>
-	</head>
-	<body>
-
-		<header class="main-header">
-			<a class="main-header__logo" href="index.html">
-				<img class="main-header__logo" src="#" width="86" height="35" alt="Mishka">
-			</a>
-			<nav class="main-nav">
-				<button class="main-nav__toggle" type="button">Открыть меню</button>
-				<div class="main-nav__wrapper">
-					<ul class="main-nav__list nav-list">
-						<li class="nav-list__item">
-							<a href="#">Каталог товаров</a>
-						</li>
-						<li class="nav-list__item">
-							<a href="#">Вязание на заказ</a>
-						</li>
-					</ul>
-					<ul class="main-nav__list user-list">
-						<li class="user-list__item">
-							<a href="#">Поиск по сайту</a>
-						</li>
-						<li class="user-list__item">
-							<a href="#">Корзина: пока пуста</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</header>
-
-		<main class="page-main">
-
-			<section class="catalog">
-				<h1 class="catalog__title">Каталог товаров</h2>
-				<ul class="catalog__list">
-					<li class="catalog__item">
-						<a class="catalog__item-image" href="#"><img src="#" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
-						<a class="catalog__item-title" href="#"><b >Зайчик-попрыгайчик</b></a>
-						<p class="catalog__item-description">Рост 30 см, вес 200 г</p>
-						<b class="catalog__item-price">1 200 руб.</b>
-						<a class="catalog__cart" href="#">Добавить в корзину</a>
-					</li>
-
-					<li class="catalog__item">
-						<a class="catalog__item-image" href="#"><img src="#" width="260" height="195" alt="Корзинка для белья"></a>
-						<a class="catalog__item-title" href="#"><b >Корзинка для белья</b></a>
-						<p class="catalog__item-description">Диаметр 15 см, высота 10 см</p>
-						<b class="catalog__item-price">690 руб.</b>
-						<a class="catalog__cart" href="#">Добавить в корзину</a>
-					</li>
-
-					<li class="catalog__item">
-						<a class="catalog__item-image" href="#"><img src="#" width="260" height="195" alt="Большая корзинка для игрушек"></a>
-						<a class="catalog__item-title" href="#"><b >Большая корзинка для игрушек</b></a>
-						<p class="catalog__item-description">Диаметр 30 см, высота 30 см</p>
-						<b class="catalog__item-price">1 500 руб.</b>
-						<a class="catalog__cart" href="#">Добавить в корзину</a>
-					</li>
-
-				</ul>
-			</section>
-
-			<section class="production">
-				<h2 class="production__title">Процесс производства</h2>
-				<img class="production__video" src="#" width="260" height="150" alt="Процесс производства">
-				<p class="production__intro">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-				<button class="production__make-order button" type="button">Сделать заказ</button>
-			</section>
-
-		</main>
-
-		<footer class="page-footer">
-
-			<div class="social">
-				<ul class="social__list">
-					<li class="social__item">
-						<a class="social__link" href="#">Instagram</a>
-					</li>
-					<li class="social__item">
-						<a class="social__link" href="#">Facebook</a>
-					</li>
-					<li class="social__item">
-						<a class="social__link" href="#">Tweeter</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="copyright">
-				<b class="copyright__text">Разработано</b>
-				<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-			</div>
-
-		</footer>
-
-		<div class="modal">
-			<h2 class="modal__title">Добавить в корзину</h2>
-			<p class="modal__choose">Выберите размер:</p>
-			<ul class="modal__sizes">
-				<a class="modal__size" href="#"><li>s</li></a>
-				<a class="modal__size" href="#"><li>m</li></a>
-				<a class="modal__size" href="#"><li>l</li></a>
-			</ul>
-			<button class="modal__add-product button" type="button">Добавить</button>
-		</div>
-
-	</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Mishka-каталог товаров</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo" src="#" width="86" height="35" alt="Mishka">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list nav-list">
+            <li class="nav-list__item">
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="user-list__item">
+              <a href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="catalog">
+        <h1 class="catalog__title">Каталог товаров</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <a class="catalog__item-image" href="#"><img src="#" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
+            <a class="catalog__item-title" href="#"><b >Зайчик-попрыгайчик</b></a>
+            <p class="catalog__item-description">Рост 30 см, вес 200 г</p>
+            <b class="catalog__item-price">1 200 руб.</b>
+            <a class="catalog__cart" href="#">Добавить в корзину</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__item-image" href="#"><img src="#" width="260" height="195" alt="Корзинка для белья"></a>
+            <a class="catalog__item-title" href="#"><b >Корзинка для белья</b></a>
+            <p class="catalog__item-description">Диаметр 15 см, высота 10 см</p>
+            <b class="catalog__item-price">690 руб.</b>
+            <a class="catalog__cart" href="#">Добавить в корзину</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__item-image" href="#"><img src="#" width="260" height="195" alt="Большая корзинка для игрушек"></a>
+            <a class="catalog__item-title" href="#"><b >Большая корзинка для игрушек</b></a>
+            <p class="catalog__item-description">Диаметр 30 см, высота 30 см</p>
+            <b class="catalog__item-price">1 500 руб.</b>
+            <a class="catalog__cart" href="#">Добавить в корзину</a>
+          </li>
+        </ul>
+      </section>
+      <section class="production">
+        <h2 class="production__title">Процесс производства</h2>
+        <img class="production__video" src="#" width="260" height="150" alt="Процесс производства">
+        <p class="production__intro">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <button class="production__make-order button" type="button">Сделать заказ</button>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">Instagram</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">Tweeter</a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+    <div class="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__choose">Выберите размер:</p>
+      <ul class="modal__sizes">
+        <a class="modal__size" href="#"><li>s</li></a>
+        <a class="modal__size" href="#"><li>m</li></a>
+        <a class="modal__size" href="#"><li>l</li></a>
+      </ul>
+      <button class="modal__add-product button" type="button">Добавить</button>
+    </div>
+  </body>
 </html>
