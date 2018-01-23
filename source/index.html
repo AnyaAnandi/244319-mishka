@@ -2,11 +2,136 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <title>Mishka</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+    <header class="main-header">
+      <a class="main-header__logo">
+        <!-- ПО ТЗ НА ГЛАВНОЙ СТРАНИЦЕ ЛОГОТИП ЭТО НЕ ССЫЛКА! -->
+        <img class="main-header__logo" src="#" width="86" height="35" alt="Mishka">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list nav-list">
+            <li class="nav-list__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="user-list__item">
+              <a href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="page-main__title">Милые штуки ручной работы для дома</h1>
+      <ul class="page-main__menu">
+        <li class="page-main__item"><a href="#">Предметы интерьера</a></li>
+        <li class="page-main__item"><a href="#">Детские игрушки</a></li>
+      </ul>
+      <section class="products">
+        <h2 class="products__title">Вязаные корзинки</h2>
+        <b class="products__hit">Товар недели</b>
+        <p class="products__description"> Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <table class="products__data">
+          <tr>
+            <td class="products__field">Цвет:</td>
+            <td class="products__value">&laquoТиффани&raquo/серый</td>
+          </tr>
+          <tr>
+            <td class="products__field">Диаметр:</td>
+            <td class="products__value">25 см</td>
+          </tr>
+          <tr>
+            <td class="products__field">Высота:</td>
+            <td class="products__value">15 см</td>
+          </tr>
+        </table>
+        <img class="products__image" src="#" width="260" height="315" alt="Вязаные корзинки">
+        <p class="products__price">Цена: 990 руб.</p>
+        <a class="products__order button" href="#">Заказать</a>
+      </section>
+      <section class="features">
+        <h2 class="features__title">Коротко о нас:</h2>
+        <ul class="features__list">
+          <li class="features__item features__item--eco">Экологически чистые материалы</li>
+          <li class="features__item features__item--style">Скандинавский cтиль по российской цене</li>
+          <li class="features__item features__item--likes">Увеличивает лайки на фотографиях</li>
+          <li class="features__item features__item--handmade">Связано вручную с любовью и умилением</li>
+          <li class="features__item features__item--support">Поддержка отечественного производителя</li>
+          <li class="features__item features__item--gift">Поставляется в подарочной упаковке</li>
+        </ul>
+      </section>
+      <section class="comments slider">
+        <h2 class="comments__title">Отзывы</h2>
+        <blockquote class="comments__item">
+          <!-- Про три отзыва не очень поняла?! - в макете всегод один отзыв ... еще раз пересмотрела макет и нет скрытых отзывов ?! по логике конечно здесь будет несколько отзывов поэтому я добавила секции еще общий класс slider-->
+          <p class="comments__content">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <cite class="comments__author">Анастасия Красильникова</cite>
+          <p class="comments__author-link">@misssssiskras</p>
+          <p class="comments__toggles slider__toggles">
+            <button class="slider__prev" type="button">Предыдущий отзыв</button>
+            <button class="slider__next" type="button">Следующий отзыв</button>
+          </p>
+          <a class="comments__add-comment button" href="#">Написать</a>
+        </blockquote>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <section class="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <table class="contacts__data">
+          <tr>
+            <td class="data__name">e-mail:</td>
+            <td class="data__value">info@mimimishkashop.ru</td>
+          </tr>
+          <tr>
+            <td class="data__name">адрес:</td>
+            <td class="data__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+          </tr>
+        </table>
+        <img class="contacts__map" src="#" width="322" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        <a class="contacts__write-us button" href="#">Напишите нам</a>
+      </section>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">Instagram</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">Tweeter</a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+    <section class="modal">
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__choose">Выберите размер:</p>
+        <input type="checkbox" id="s">
+        <label for="s">S</label>
+        <input type="checkbox" id="m">
+        <label for="s">M</label>
+        <input type="checkbox" id="l">
+        <label for="s">L</label>
+        <input class="form__submit button" type="submit" value="Добавить">
+      </form>
+    </section>
   </body>
 </html>

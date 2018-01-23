@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Mishka-каталог товаров</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <a class="main-header__logo-link" href="index.html">
+        <img class="main-header__logo-image" src="#" width="86" height="35" alt="Mishka">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list nav-list">
+            <li class="nav-list__item">
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="user-list__item">
+              <a href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="catalog">
+        <h1 class="catalog__title">Каталог товаров</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <article class="product">
+              <!-- Если li как ты написала будет мешать использовать блок товара, то какой смысл его миксовать. Поэтому я в него вставляю артикл с отдельным универсальным классом - или я не так думаю? -->
+              <a class="product__image" href="#"><img src="#" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
+              <a class="product__title" href="#"><b >Зайчик-попрыгайчик</b></a>
+              <p class="product__description">Рост 30 см, вес 200 г</p>
+              <b class="product__price">1 200 руб.</b>
+              <a class="product__cart" href="#">Добавить в корзину</a>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="product">
+              <a class="product__image" href="#"><img src="#" width="260" height="195" alt="Корзинка для белья"></a>
+              <a class="product__title" href="#"><b >Корзинка для белья</b></a>
+              <p class="product__description">Диаметр 15 см, высота 10 см</p>
+              <b class="product__price">690 руб.</b>
+              <a class="product__cart" href="#">Добавить в корзину</a>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="product">
+              <a class="product__image" href="#"><img src="#" width="260" height="195" alt="Большая корзинка для игрушек"></a>
+              <a class="product__title" href="#"><b >Большая корзинка для игрушек</b></a>
+              <p class="product__description">Диаметр 30 см, высота 30 см</p>
+              <b class="product__price">1 500 руб.</b>
+              <a class="product__cart" href="#">Добавить в корзину</a>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section class="production">
+        <h2 class="production__title">Процесс производства</h2>
+        <img class="production__video" src="#" width="260" height="150" alt="Процесс производства">
+        <p class="production__intro">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="production__make-order button" href="#">Сделать заказ</a>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">Instagram</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">Tweeter</a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+    <section class="modal">
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__choose">Выберите размер:</p>
+        <input type="checkbox" id="s">
+        <label for="s">S</label>
+        <input type="checkbox" id="m">
+        <label for="s">M</label>
+        <input type="checkbox" id="l">
+        <label for="s">L</label>
+        <input class="form__submit button" type="submit" value="Добавить">
+      </form>
+    </section>
+  </body>
+</html>
