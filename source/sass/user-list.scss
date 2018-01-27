@@ -4,17 +4,19 @@
   list-style: none;
   width: 320px;
 }
-.user-list__item{
+
+.user-list__item {
   margin: 0;
   padding: 0;
   margin-left: 75px;
   margin-top: 33px;
   margin-bottom: 30px;
 }
+
 .user-list__link {
   margin: 0;
   padding: 0;
-  font-family: Open Sans;
+  font-family: "Open Sans", "Arial", sans-serif;
   text-decoration: none;
   color: #000000;
   font-size: 17px;

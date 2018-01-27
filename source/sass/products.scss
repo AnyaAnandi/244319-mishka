@@ -4,10 +4,11 @@
   margin: 0;
   padding: 0;
 }
+
 .products__title {
   margin: 0;
   paddimg: 0;
-  font-family: Open Sans;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
@@ -15,47 +16,53 @@
   margin-top: 33px;
   margin-bottom: 10px;
 }
+
 .products__hit {
   margin: 0;
   paddimg: 0;
-  font-family: Open Sans;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
   color: #63d1bb;
   text-transform: uppercase;
 }
+
 .products__description {
   margin: 0;
   paddimg: 0;
-  font-family: Open Sans;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 24px;
   font-weight: normal;
   color: #444444;
   margin-top: 30px;
 }
+
 .products__data {
   margin: 0;
   paddimg: 0;
-  font-family: Open Sans;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 20px;
   font-weight: normal;
   color: #444444;
   margin-top: 30px;
 }
+
 .products__field,
 .products__value {
   padding-bottom: 22px;
 }
+
 .products__value {
   padding-left: 30px;
 }
+
 .products__price {
   margin: 0;
   paddimg: 0;
-  font-family: Open Sans;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;

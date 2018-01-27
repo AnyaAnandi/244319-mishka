@@ -1,21 +1,23 @@
 .product__title {
   margin: 0;
   padding: 0;
-  font-family: Open Sans;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
   color: #000000;
   margin-top: 32px;
 }
+
 .product__link {
   text-decoration: none;
 }
+
 .product__description {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: Open Sans;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 30px;
   font-weight: normal;
@@ -23,15 +25,14 @@
   margin-top: 18px;
   margin-bottom: 56px;
 }
+
 .product__price {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: Open Sans;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
   color: #000000;
 }
-
-
