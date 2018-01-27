@@ -1,0 +1,66 @@
+.form {
+  margin: 0;
+  padding: 0;
+  margin-top: 26px;
+  font-family: Open Sans;
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: bold;
+  color: #000000;
+}
+.form__title {
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans;
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: bold;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+input[placeholder],
+textarea[placeholder] {
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans;
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: normal;
+  color: #444444;
+  opacity: 0.3;
+}
+.type {
+  margin: 0;
+  padding: 0;
+}
+.color,
+.personal-data,
+.contacts,
+.more  {
+  margin: 0;
+  padding: 0;
+  margin-top: 33px;
+}
+.form__clarify {
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #444444;
+  margin-top: 18px;
+}
+.form__submit {
+  margin: 0;
+  padding: 0;
+  margin-top: 31px;
+  margin-bottom: 55px;
+}
+.form__submit--form {
+  background-color: transparent;
+  border: 2px solid #000000;
+  color: #000000;
+}
+
+

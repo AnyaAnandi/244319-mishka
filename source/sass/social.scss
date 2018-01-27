@@ -1,0 +1,23 @@
+.social {
+  margin: 0;
+  pading: 0;
+  margin-top: 39px;
+  background-color: #f1f1f1;
+  height: 80px;
+}
+.social__list {
+  margin: 0;
+  pading: 0;
+  list-style: none;
+}
+.social__link {
+  margin:0;
+  padding: 0;
+  display: inline-block;
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  // что бы видно было ссылки
+}
+
