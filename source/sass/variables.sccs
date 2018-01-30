@@ -1,0 +1,15 @@
+$defaul-font: "Open Sans", "Arial", sans-serif;
+$black: #000000;
+$white: #ffffff;
+$grey: #444444;
+$grey--lighter: #f1f1f1;
+$turquoise: #63d1bb;
+$turquoise--dark: #56c3b2;
+
+body {
+ font-family: $defaul-font;
+ font-size: 17px;
+ font-weight: bold;
+ color: $black;
+ line-height: 30px;
+}

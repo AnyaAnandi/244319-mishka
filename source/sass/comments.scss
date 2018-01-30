@@ -1,53 +1,36 @@
 @import "slider.scss";
 
-.comments__title {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
-  margin-top: 60px;
+.comments {
+  color: $grey;
+}
 
-  color: #000000;
+.comments__title {
+  @include reset-indents;
+  margin-top: 60px;
+  font-size: 25px;
+  color: $black;
 }
 
 .comments__item {
-  margin: 0;
-  padding: 0;
+  @include reset-indents;
 }
 
 .comments__content {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
+  @include reset-indents;
+  margin-top: 35px;
   font-weight: normal;
   font-size: 15px;
-  line-height: 30px;
-  color: #444444;
-  margin-top: 35px;
 }
 
 .comments__author {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 30px;
-  color: #444444;
+  @include reset-indents;
   margin-top: 41px;
 }
 
 .comments__author-link {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 30px;
-  color: #444444;
+  @include reset-indents;
   margin-top: 15px;
+  font-weight: normal;
 }
 
 .comments__add-comment {

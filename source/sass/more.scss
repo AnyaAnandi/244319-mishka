@@ -1,0 +1,19 @@
+.more {
+  @include reset-indents;
+  margin-top: 33px;
+}
+
+.more__title {
+  @include reset-indents;
+  color: $turquoise;
+  text-transform: uppercase;
+}
+
+.more__info[placeholder] {
+  @include reset-indents;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: normal;
+  color: $grey;
+  opacity: 0.3;
+}

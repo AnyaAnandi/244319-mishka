@@ -1,16 +1,14 @@
 .button {
   display: block;
   width: 259px;
-  height: 20px;
-  border: 2px solid #444444;
+  min-height: 20px;
   margin: 0;
   padding: 0;
+  border: 2px solid $grey;
   text-decoration: none;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 17px;
+  font-family: $defaul-font;
+  color: $grey;
   line-height: 20px;
-  font-weight: bold;
-  color: #000000;
   text-transform: uppercase;
   text-align: center;
   padding-top: 15px;

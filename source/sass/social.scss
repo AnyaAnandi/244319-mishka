@@ -1,20 +1,17 @@
 .social {
-  margin: 0;
-  pading: 0;
+  @include reset-indents;
   margin-top: 39px;
-  background-color: #f1f1f1;
+  background-color: $grey--lighter;
   height: 80px;
 }
 
 .social__list {
-  margin: 0;
-  pading: 0;
+  @include reset-indents;
   list-style: none;
 }
 
 .social__link {
-  margin: 0;
-  padding: 0;
+  @include reset-indents;
   display: inline-block;
   font-size: 0;
   width: 20px;

@@ -1,52 +1,38 @@
 @import "button.scss";
 
 .products {
-  margin: 0;
-  padding: 0;
+  @include reset-indents;
 }
 
 .products__title {
-  margin: 0;
-  paddimg: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
+  @include reset-indents;
   font-size: 25px;
-  line-height: 30px;
-  font-weight: bold;
-  color: #000000;
   margin-top: 33px;
   margin-bottom: 10px;
 }
 
 .products__hit {
-  margin: 0;
-  paddimg: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 17px;
+  @include reset-indents;
   line-height: 20px;
-  font-weight: bold;
-  color: #63d1bb;
+  color: $turquoise;
   text-transform: uppercase;
 }
 
 .products__description {
-  margin: 0;
-  paddimg: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
+  @include reset-indents;
   font-size: 15px;
   line-height: 24px;
   font-weight: normal;
-  color: #444444;
+  color: $grey;
   margin-top: 30px;
 }
 
 .products__data {
-  margin: 0;
-  paddimg: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
+  @include reset-indents;
   font-size: 15px;
   line-height: 20px;
   font-weight: normal;
-  color: #444444;
+  color: $grey;
   margin-top: 30px;
 }
 
@@ -60,13 +46,10 @@
 }
 
 .products__price {
-  margin: 0;
-  paddimg: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 17px;
+  @include reset-indents;
   line-height: 24px;
   font-weight: bold;
-  color: #444444;
+  color: $grey;
   margin-top: 30px;
   margin-bottom: 28px;
 }

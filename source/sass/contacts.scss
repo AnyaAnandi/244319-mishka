@@ -1,23 +1,15 @@
 .contacts__title {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 30px;
+  @include reset-indents;
   margin-top: 92px;
-  color: #000000;
+  font-size: 18px;
 }
 
 .contacts__data {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
+  @include reset-indents;
   font-weight: normal;
   font-size: 15px;
-  line-height: 30px;
   margin-top: 40px;
-  color: #444444;
+  color: $grey;
 }
 
 .data__name,

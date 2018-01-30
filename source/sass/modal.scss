@@ -1,29 +1,23 @@
 .modal__title {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: bold;
+  @include reset-indents;
   font-size: 25px;
-  line-height: 30px;
   margin-top: 75px;
-  color: #000000;
 }
 
 .modal__choose {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
+  @include reset-indents;
   font-weight: normal;
   font-size: 15px;
-  line-height: 30px;
   margin-top: 75px;
-  color: #444444;
+  color: $grey;
 }
 
 .form__submit {
   height: 52px;
+  font-size: 17px;
   margin-top: 15px;
-  background-color: #63d1bb;
-  border-color: #63d1bb;
-  color: #ffffff;
+  background-color: $turquoise;
+  border-color: $turquoise;
+  font-weight: bold;
+  color: $white;
 }

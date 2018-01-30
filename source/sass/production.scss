@@ -1,28 +1,21 @@
 .production__title {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
+  @include reset-indents;
   font-size: 17px;
   line-height: 24px;
-  font-weight: bold;
-  color: #000000;
   margin-top: 90px;
 }
 
 .production__video {
-  margin: 0;
-  padding: 0;
+  @include reset-indents;
   margin-top: 26px;
 }
 
 .production__intro {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
+  @include reset-indents;
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;
-  color: #444444;
+  color: $grey;
   margin-top: 34px;
 }
 

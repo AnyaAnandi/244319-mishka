@@ -1,0 +1,10 @@
+.color {
+  @include reset-indents;
+  margin-top: 33px;
+}
+
+.color__title {
+  @include reset-indents;
+  color: $turquoise;
+  text-transform: uppercase;
+}

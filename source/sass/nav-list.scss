@@ -1,6 +1,5 @@
 .nav-list {
-  margin: 0;
-  padding: 0;
+  @include reset-indents;
   list-style: none;
   width: 320px;
 }
@@ -12,10 +11,7 @@
 }
 
 .nav-list__link {
-  font-family: "Open Sans", "Arial", sans-serif;
   text-decoration: none;
-  color: #000000;
-  font-size: 17px;
+  color: $black;
   line-height: 24px;
-  font-weight: bold;
 }
