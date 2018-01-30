@@ -1,0 +1,26 @@
+.contacts__title {
+  @include reset-indents;
+  margin-top: 92px;
+  font-size: 18px;
+}
+
+.contacts__data {
+  @include reset-indents;
+  font-weight: normal;
+  font-size: 15px;
+  margin-top: 40px;
+  color: $grey;
+}
+
+.data__name,
+.data__value {
+  padding-bottom: 48px;
+}
+
+.data__value {
+  padding-left: 30px;
+}
+
+.contacts__write-us {
+  margin-top: 39px;
+}

@@ -1,0 +1,20 @@
+.user-list {
+  @include reset-indents;
+  list-style: none;
+  width: 320px;
+}
+
+.user-list__item {
+  @include reset-indents;
+  margin-left: 75px;
+  margin-top: 33px;
+  margin-bottom: 30px;
+}
+
+.user-list__link {
+  @include reset-indents;
+  text-decoration: none;
+  color: $black;
+  font-size: 17px;
+  line-height: 24px;
+}

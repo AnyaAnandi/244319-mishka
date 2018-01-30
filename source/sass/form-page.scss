@@ -1,0 +1,17 @@
+@import "form.scss";
+
+.form-page__title {
+  @include reset-indents;
+  padding-top: 75px;
+  padding-bottom: 65px;
+  background-color: $grey--lighter;
+}
+
+.form-page__description {
+  @include reset-indents;
+  margin-top: 29px;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+  color: $grey;
+}

@@ -1,0 +1,14 @@
+.copyright {
+  //display: block;
+  @include reset-indents;
+  padding-top: 27px;
+  background-color: $grey--lighter;
+  height: 80px;
+}
+
+.copyright__text {
+  @include reset-indents;
+  font-size: 19px;
+  line-height: 20px;
+  margin-top: 27px;
+}

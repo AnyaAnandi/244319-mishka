@@ -1,0 +1,21 @@
+.social {
+  @include reset-indents;
+  margin-top: 39px;
+  background-color: $grey--lighter;
+  height: 80px;
+}
+
+.social__list {
+  @include reset-indents;
+  list-style: none;
+}
+
+.social__link {
+  @include reset-indents;
+  display: inline-block;
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  // что бы видно было ссылки
+}

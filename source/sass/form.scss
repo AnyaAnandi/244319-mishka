@@ -1,0 +1,33 @@
+@import "type.scss";
+@import "color";
+@import "personal-data";
+@import "contact-form";
+@import "more";
+
+.form {
+  @include reset-indents;
+  margin-top: 26px;
+  line-height: 28px;
+}
+
+.form__clarify {
+  @include reset-indents;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: $grey;
+  margin-top: 18px;
+}
+
+.form__submit {
+  @include reset-indents;
+  margin-top: 31px;
+  margin-bottom: 55px;
+}
+
+.form__submit--form {
+  font-size: 17px;
+  background-color: transparent;
+  border: 2px solid $grey;
+  color: $grey;
+}

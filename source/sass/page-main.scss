@@ -1,0 +1,9 @@
+@import "main-menu.scss";
+@import "products";
+
+
+.page-main__title {
+  @include reset-indents;
+  font-size: 27px;
+  margin-top: 75px;
+}

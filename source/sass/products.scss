@@ -1,0 +1,55 @@
+@import "button.scss";
+
+.products {
+  @include reset-indents;
+}
+
+.products__title {
+  @include reset-indents;
+  font-size: 25px;
+  margin-top: 33px;
+  margin-bottom: 10px;
+}
+
+.products__hit {
+  @include reset-indents;
+  line-height: 20px;
+  color: $turquoise;
+  text-transform: uppercase;
+}
+
+.products__description {
+  @include reset-indents;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: normal;
+  color: $grey;
+  margin-top: 30px;
+}
+
+.products__data {
+  @include reset-indents;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: normal;
+  color: $grey;
+  margin-top: 30px;
+}
+
+.products__field,
+.products__value {
+  padding-bottom: 22px;
+}
+
+.products__value {
+  padding-left: 30px;
+}
+
+.products__price {
+  @include reset-indents;
+  line-height: 24px;
+  font-weight: bold;
+  color: $grey;
+  margin-top: 30px;
+  margin-bottom: 28px;
+}

@@ -1,0 +1,15 @@
+.slider__toggles {
+  @include reset-indents;
+  display: block;
+  width: 260px;
+  height: 52px;
+  border: 1px solid $grey--lighter;
+  margin-top: 36px;
+}
+
+.slider__prev,
+.slider__next {
+  @include reset-indents;
+  width: 127px;
+  border: none;
+}

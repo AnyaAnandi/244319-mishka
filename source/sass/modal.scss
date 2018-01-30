@@ -1,0 +1,23 @@
+.modal__title {
+  @include reset-indents;
+  font-size: 25px;
+  margin-top: 75px;
+}
+
+.modal__choose {
+  @include reset-indents;
+  font-weight: normal;
+  font-size: 15px;
+  margin-top: 75px;
+  color: $grey;
+}
+
+.form__submit {
+  height: 52px;
+  font-size: 17px;
+  margin-top: 15px;
+  background-color: $turquoise;
+  border-color: $turquoise;
+  font-weight: bold;
+  color: $white;
+}

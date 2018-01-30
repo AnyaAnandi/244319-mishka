@@ -1,0 +1,20 @@
+.contact {
+  @include reset-indents;
+  margin-top: 33px;
+}
+
+.contact__title {
+  @include reset-indents;
+  color: $turquoise;
+  text-transform: uppercase;
+}
+
+.contact__phone[placeholder],
+.contact__email[placeholder] {
+  @include reset-indents;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: normal;
+  color: $grey;
+  opacity: 0.3;
+}

@@ -1,0 +1,15 @@
+.features__title {
+  @include reset-indents;
+  font-size: 25px;
+  margin-top: 75px;
+}
+
+.features__list {
+  @include reset-indents;
+  list-style: none;
+  line-height: 20px;
+}
+
+.features__item {
+  margin-top: 85px;
+}
