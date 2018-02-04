@@ -20,3 +20,21 @@
   line-height: 24px;
   color: $white;
 }
+
+@media (min-width: $tablet-width) {
+  .main-menu {
+    width: 668px;
+    display: flex;
+  }
+
+  .main-menu__item {
+    width: 525px;
+    margin-top: 253px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-menu {
+    width: 1050px;
+  }
+}

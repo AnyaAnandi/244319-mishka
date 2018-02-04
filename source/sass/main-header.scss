@@ -1,24 +1,63 @@
+@import "main-nav.scss";
+
 .main-header {
   @include reset-indents;
   width: 320px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.main-header__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header__logo {
+  @include reset-indents;
+  width: 86px;
+  //display: inline-block;
+  //height: 80px;
+  border: 1px solid black;
+  margin: 0 auto;
 }
 
 .main-header__logo-image {
   @include reset-indents;
-  margin-left: 116px;
   padding-top: 22px;
   padding-bottom: 22px;
 }
 
-.main-nav__toggle {
-  @include reset-indents;
-  width: 20px;
-  height: 14px;
-  font-size: 0;
-  background-color: green;
-  //просто  что бы видно было
+@media (min-width: $tablet-width) {
+  .main-header {
+    width: 768px;
+    height: 89px;
+    margin: 0 auto;
+  }
+
+  .main-header__wrapper {
+    flex-direction: row;
+  }
+
+  .main-header__logo {
+    @include reset-indents;
+    width: 111px;
+    margin-left: 50px;
+  }
 }
 
-.main-nav__wrapper {
-  //display: none;
+@media (min-width: $desktop-width) {
+  .main-header {
+    width: 1250px;
+  }
+
+  .main-header__wrapper {
+    @include desktop-center;
+    display: flex;
+  }
+
+  .main-header__logo {
+    width: 149px;
+    order: 1;
+    margin-left: -600px;
+  }
 }

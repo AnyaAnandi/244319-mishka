@@ -1,6 +1,7 @@
 .more {
   @include reset-indents;
-  margin-top: 33px;
+  @include mobile-center;
+  margin-top: 20px;
 }
 
 .more__title {
@@ -16,4 +17,21 @@
   font-weight: normal;
   color: $grey;
   opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .more__wrap {
+    @include tablet-center;
+    display: flex;
+  }
+
+  .more__title {
+    width: 168px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .more__wrap {
+    width: 1050px;
+  }
 }

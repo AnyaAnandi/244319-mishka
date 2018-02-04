@@ -5,8 +5,11 @@ $grey: #444444;
 $grey--lighter: #f1f1f1;
 $turquoise: #63d1bb;
 $turquoise--dark: #56c3b2;
+$tablet-width: 768px;
+$desktop-width: 1250px;
 
 body {
+ min-width: 320px;
  font-family: $defaul-font;
  font-size: 17px;
  font-weight: bold;

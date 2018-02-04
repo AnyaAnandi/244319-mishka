@@ -1,9 +1,31 @@
 .type {
   @include reset-indents;
+  width: 260px;
+  margin: 0 auto;
 }
 
 .type__title {
   @include reset-indents;
   color: $turquoise;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .type {
+    @include tablet-center;
+  }
+
+  .type__wrap {
+    display: flex;
+  }
+
+  .type__title {
+    width: 168px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .type {
+    @include desktop-center;
+  }
 }

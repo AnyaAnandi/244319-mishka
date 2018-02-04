@@ -1,9 +1,35 @@
 @import "main-menu.scss";
 @import "products";
 
+.page-main__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
 
 .page-main__title {
   @include reset-indents;
   font-size: 27px;
   margin-top: 75px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    @include tablet-title;
+    margin-top: 155px;
+  }
+
+  .page-main__wrapper {
+    @include tablet-center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    @include desktop-title;
+    margin-top: 163px;
+  }
+
+  .page-main__wrapper {
+    @include desktop-center;
+  }
 }

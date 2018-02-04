@@ -7,6 +7,7 @@
   </head>
   <body>
     <header class="main-header">
+      <div class="main-header__wrapper">
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="#" width="86" height="35" alt="Mishka">
       </a>
@@ -31,78 +32,121 @@
           </ul>
         </div>
       </nav>
+    </div>
     </header>
     <main class="page-main form-page">
-      <h1 class="form-page__title page-main__title">Вязание на заказ</h1>
-      <p class="form-page__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <div class="title__wrap">
+        <div class="form-page__wrapper">
+          <h1 class="form-page__title page-main__title">Вязание на заказ</h1>
+          <p class="form-page__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        </div>
+      </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="form__type type">
-          <legend class="type__title form__title">Тип</legend>
-          <input type="radio" id="accessory" checked>
-          <label for="accessory">Аксессуар для интерьера</label>
-          <input type="radio" id="toy">
-          <label for="accessory">Детская игрушка</label>
-        </fieldset>
-        <fieldset class="form__color color">
-          <legend class="color__title form__title">Цвет</legend>
-          <input type="checkbox" id="white" checked>
-          <label for="white">Белый</label>
-          <input type="checkbox" id="grey" checked>
-          <label for="grey">Серый</label>
-          <input type="checkbox" id="tiffany">
-          <label for="tiffany">&laquoТиффани&raquo</label>
-          <input type="checkbox" id="black">
-          <label for="black">Черный</label>
-          <input type="checkbox" id="pink">
-          <label for="pink">Розовый</label>
-          <input type="checkbox" id="orange">
-          <label for="orange">Оранжевый</label>
-        </fieldset>
-        <fieldset class="form__personal-data personal-data">
-          <legend class="personal-data__title form__title">ФИО</legend>
-          <label for="name">Имя:
-            <input class="personal-data__name" type="text" id="name" placeholder="Введите ваше имя*">
-          </label>
-          <label for="surname">Фамилия:
-            <input class="personal-data__surname" type="text" id="surname" placeholder="Укажите фамилию*">
-          </label>
-          <label for="patronymic">Отчество:
-            <input class="personal-data__patronymic" type="text" id="patronymic" placeholder="Отчество, если желаете">
-          </label>
-        </fieldset>
-        <fieldset class="form__contact contact">
-          <!-- легенду здесь поставила изначально, так как по макету это выглядит как легенда у предыдущих блоков - мне показалось было бы легче назначить на все легенды одно оформление и вот здесь понимаю что надо еще на все легенды навесить еще и отделный класс для этого унивесальоно оформления или не надо? -->
-          <label for="tel" class="contact__title form__title">Тел</label>
-          <input class="contact__phone" type="tel" id="phone" placeholder="+7 ХХХ ХХ ХХ*">
-          <label for="email" class="contact__title form__title">E-mail</lable>
-            <input class="contact__email" type="email" id="e-mail" placeholder="Ваш Email*">
+          <div class="type__wrap">
+            <legend class="type__title form__title">Тип</legend>
+            <div class="type__wrap-radio">
+              <div class="type__radio">
+                <input type="radio" id="accessory" checked>
+                <label for="accessory">Аксессуар для интерьера</label> </div>
+                <div class="type__radio">
+                  <input type="radio" id="toy">
+                  <label for="accessory">Детская игрушка</label>
+                </div>
+              </div>
+            </div>
           </fieldset>
-          <fieldset class="form__more more">
-            <lable for="more" class="more__title form__title">Доп</lable>
-            <textarea class="more__info" id="more" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <fieldset class="form__color color">
+            <div class="color__wrap">
+              <legend class="color__title form__title">Цвет</legend>
+              <div class="color__wrap-checkbox">
+                <div class="color__checkbox">
+                  <input type="checkbox" id="white" checked>
+                  <label for="white">Белый</label>
+                </div>
+                <div class="color__checkbox">
+                  <input type="checkbox" id="grey" checked>
+                  <label for="grey">Серый</label>
+                </div>
+                <div class="color__checkbox">
+                  <input type="checkbox" id="tiffany">
+                  <label for="tiffany">&laquoТиффани&raquo</label>
+                </div>
+                <div class="color__checkbox">
+                  <input type="checkbox" id="black">
+                  <label for="black">Черный</label>
+                </div>
+                <div class="color__checkbox">
+                  <input type="checkbox" id="pink">
+                  <label for="pink">Розовый</label>
+                </div>
+                <div class="color__checkbox">
+                  <input type="checkbox" id="orange">
+                  <label for="orange">Оранжевый</label>
+                </div>
+              </div>
+            </div>
           </fieldset>
-          <p class="form__clarify">*Поля обязательны для заполнения</p>
-          <input class="form__submit form__submit--form button" type="submit" value="Отправить заказ">
-        </form>
-      </main>
-      <footer class="page-footer">
-        <div class="social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="#">Instagram</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">Facebook</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">Tweeter</a>
-            </li>
-          </ul>
-        </div>
-        <div class="copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
-      </footer>
-    </body>
-  </html>
+          <fieldset class="form__personal-data personal-data">
+            <div class="personal-data__wrap">
+              <legend class="personal-data__title form__title">ФИО</legend>
+              <div class="personal-data__label">
+                <label for="name">Имя:
+                  <input class="personal-data__name" type="text" id="name" placeholder="Введите ваше имя*">
+                </label>
+                <label for="surname">Фамилия:
+                  <input class="personal-data__surname" type="text" id="surname" placeholder="Укажите фамилию*">
+                </label>
+                <label for="patronymic">Отчество:
+                  <input class="personal-data__patronymic" type="text" id="patronymic" placeholder="Отчество, если желаете">
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="form__contact contact">
+            <div class="contact__wrap">
+              <label for="tel" class="contact__title form__title">Тел</label>
+              <input class="contact__phone" type="tel" id="phone" placeholder="+7 ХХХ ХХ ХХ*">
+            </div>
+            <div class="contact__wrap">
+              <label for="email" class="contact__title form__title">E-mail</label>
+                <input class="contact__email" type="email" id="e-mail" placeholder="Ваш Email*">
+              </div>
+            </fieldset>
+            <fieldset class="form__more more">
+              <div class="more__wrap">
+                <lable for="more" class="more__title form__title">Доп</lable>
+                <textarea class="more__info" id="more" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </div>
+            </fieldset>
+            <div class="form__wrap form__wrap--additional">
+              <p class="form__clarify">*Поля обязательны для заполнения</p>
+              <input class="form__submit form__submit--form button" type="submit" value="Отправить заказ">
+            </div>
+          </form>
+        </main>
+        <footer class="page-footer">
+          <div class="footer__wrap">
+            <div class="footer__wrap--tablet">
+              <div class="social">
+                <ul class="social__list">
+                  <li class="social__item">
+                    <a class="social__link" href="#">Instagram</a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#">Facebook</a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#">Tweeter</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="copyright">
+                <b class="copyright__text">Разработано</b>
+                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </body>
+    </html>

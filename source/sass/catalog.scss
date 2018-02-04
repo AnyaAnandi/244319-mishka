@@ -1,9 +1,18 @@
 @import "product.scss";
 
+.catalog__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
 .catalog__title {
   @include reset-indents;
   padding-top: 75px;
   padding-bottom: 65px;
+  background-color: $grey--lighter;
+}
+
+.title__wrap {
   background-color: $grey--lighter;
 }
 
@@ -15,4 +24,31 @@
 .catalog__item {
   @include reset-indents;
   margin-top: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .title__wrap {
+    background-color: $grey--lighter;
+  }
+
+  .catalog__title {
+    margin-top: 105px;
+  }
+
+  .catalog__wrapper {
+    @include tablet-center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    @include desktop-center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .catalog__title {
+    @include desktop-title;
+    margin-top: 103px;
+  }
 }

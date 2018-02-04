@@ -1,6 +1,7 @@
 .personal-data {
   @include reset-indents;
-  margin-top: 33px;
+  @include mobile-center;
+  margin-top: 20px;
 }
 
 .personal-data__title {
@@ -18,4 +19,30 @@
   font-weight: normal;
   color: $grey;
   opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .personal-data {
+    margin-top: 20px;
+  }
+
+  .personal-data__wrap {
+    @include tablet-center;
+    display: flex;
+  }
+
+  .personal-data__title {
+    width: 168px;
+  }
+
+  .personal-data__label {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .personal-data__wrap {
+    width: 1050px;
+  }
 }

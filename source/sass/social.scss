@@ -5,9 +5,19 @@
   height: 80px;
 }
 
+.footer__wrap--tablet {
+  margin: 0 auto;
+  width: 260px;
+}
+
+.footer__wrap {
+  background-color: $grey--lighter;
+}
+
 .social__list {
   @include reset-indents;
   list-style: none;
+  display: flex;
 }
 
 .social__link {
@@ -18,4 +28,24 @@
   height: 20px;
   background-color: red;
   // что бы видно было ссылки
+  margin-right: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__wrap {
+    background-color: $grey--lighter;
+    margin-top: 57px;
+  }
+
+  .footer__wrap--tablet {
+    @include tablet-center;
+    display: flex;
+    height: 143px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__wrap--tablet {
+    @include desktop-center;
+  }
 }

@@ -1,0 +1,20 @@
+@import "contacts.scss";
+@import "social.scss";
+@import "copyright.scss";
+
+.page-footer__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    @include tablet-center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    @include desktop-center;
+  }
+}

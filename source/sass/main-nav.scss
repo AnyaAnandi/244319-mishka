@@ -1,0 +1,27 @@
+@import "nav-list.scss";
+@import "user-list.scss";
+
+.main-nav__toggle {
+  @include reset-indents;
+  display: none;
+  width: 20px;
+  height: 14px;
+  font-size: 0;
+  background-color: green;
+  //просто  что бы видно было
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__wrapper {
+    @include reset-indents;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    width: 1050px;
+    justify-content: space-between;
+  }
+}

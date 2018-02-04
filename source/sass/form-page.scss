@@ -1,5 +1,9 @@
 @import "form.scss";
 
+.form-page__wrapper {
+  @include mobile-center;
+}
+
 .form-page__title {
   @include reset-indents;
   padding-top: 75px;
@@ -14,4 +18,39 @@
   line-height: 24px;
   font-weight: normal;
   color: $grey;
+}
+
+.form__wrap--additional {
+  @include mobile-center;
+}
+
+@media (min-width: $tablet-width) {
+  .form-page__wrapper {
+    @include tablet-center;
+  }
+
+  .form-page__title {
+    margin-top: 103px;
+  }
+
+  .form-page__description {
+    @include td-content;
+  }
+
+  .form__wrap {
+    @include tablet-center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-page__wrapper {
+    @include desktop-center;
+  }
+
+  .form__wrap {
+    @include desktop-center;
+  }
 }
