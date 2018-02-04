@@ -1,3 +1,7 @@
+.modal {
+  @include modal-mobile;
+}
+
 .modal__title {
   @include reset-indents;
   font-size: 25px;
@@ -20,4 +24,19 @@
   border-color: $turquoise;
   font-weight: bold;
   color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    @include tablet-center;
+    width: 556px;
+    border: 1px solid black;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal {
+    @include desktop-center;
+    width: 556px;
+  }
 }

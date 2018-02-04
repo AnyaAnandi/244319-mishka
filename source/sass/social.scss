@@ -5,12 +5,11 @@
   height: 80px;
 }
 
-.footer__wrap--tablet {
-  margin: 0 auto;
-  width: 260px;
+.social-copyright__wrapper {
+  @include mobile-center;
 }
 
-.footer__wrap {
+.social-copyright {
   background-color: $grey--lighter;
 }
 
@@ -32,20 +31,19 @@
 }
 
 @media (min-width: $tablet-width) {
-  .footer__wrap {
-    background-color: $grey--lighter;
+  .social-copyright {
     margin-top: 57px;
   }
 
-  .footer__wrap--tablet {
+  .social-copyright__wrapper {
     @include tablet-center;
     display: flex;
-    height: 143px;
+    justify-content: flex-end;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .footer__wrap--tablet {
+  .social-copyright__wrapper {
     @include desktop-center;
   }
 }

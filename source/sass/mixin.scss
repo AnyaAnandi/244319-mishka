@@ -18,6 +18,11 @@
   margin: 0 auto;
 }
 
+@mixin modal-mobile {
+  width: 320px;
+  margin: 0 auto;
+}
+
 @mixin tablet-title {
   font-size: 43px;
   line-height: 50px;

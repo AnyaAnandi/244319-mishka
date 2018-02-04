@@ -3,8 +3,7 @@
 @import "copyright.scss";
 
 .page-footer__wrapper {
-  width: 260px;
-  margin: 0 auto;
+  @include mobile-center;
 }
 
 @media (min-width: $tablet-width) {

@@ -74,7 +74,7 @@
     font-size: 17px;
   }
 
-  .products__wrap--tablet {
+  .products__wrapper {
     @include reset-indents;
     width: 292px;
     margin-top: 40px;
@@ -119,7 +119,7 @@
     margin-right: 30px;
   }
 
-  .products__wrap--tablet {
+  .products__wrapper {
     width: 350px;
     margin-left: 175px;
   }
