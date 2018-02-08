@@ -9,39 +9,37 @@
   <body>
     <header class="main-header">
       <div class="main-header__wrapper">
-      <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="#" width="86" height="35" alt="Mishka">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list nav-list">
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="#">Вязание на заказ</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__link" href="#">Поиск по сайту</a>
-            </li>
-            <li class="user-list__item">
-              <a class="user-list__link" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+        <a class="main-header__logo" href="index.html">
+          <img class="main-header__logo-image" src="#" width="86" height="35" alt="Mishka">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list nav-list">
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="#">Вязание на заказ</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list user-list">
+              <li class="user-list__item user-list__item--search">
+                <a class="user-list__link" href="#">Поиск по сайту</a>
+              </li>
+              <li class="user-list__item user-list__item--cart">
+                <a class="user-list__link" href="#">Корзина: пока пуста</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="page-main form-page">
-      <div class="title__wrap">
-        <div class="form-page__wrapper">
-          <h1 class="form-page__title page-main__title">Вязание на заказ</h1>
-          <p class="form-page__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        </div>
+      <div class="form-page__title-bg">
+        <h1 class="form-page__title page-main__title">Вязание на заказ</h1>
       </div>
+      <p class="form-page__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="form__type type">
           <div class="type__wrap">
@@ -111,43 +109,43 @@
             </div>
             <div class="contact__wrap">
               <label for="email" class="contact__title form__title">E-mail</label>
-                <input class="contact__email" type="email" id="e-mail" placeholder="Ваш Email*">
-              </div>
-            </fieldset>
-            <fieldset class="form__more more">
-              <div class="more__wrap">
-                <lable for="more" class="more__title form__title">Доп</lable>
-                <textarea class="more__info" id="more" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-              </div>
-            </fieldset>
-            <div class="form__wrap form__wrap--additional">
-              <p class="form__clarify">*Поля обязательны для заполнения</p>
-              <input class="form__submit form__submit--form button" type="submit" value="Отправить заказ">
+              <input class="contact__email" type="email" id="e-mail" placeholder="Ваш Email*">
             </div>
-          </form>
-        </main>
-        <footer class="page-footer">
-          <div class="footer__wrap">
-            <div class="footer__wrap--tablet">
-              <div class="social">
-                <ul class="social__list">
-                  <li class="social__item">
-                    <a class="social__link" href="#">Instagram</a>
-                  </li>
-                  <li class="social__item">
-                    <a class="social__link" href="#">Facebook</a>
-                  </li>
-                  <li class="social__item">
-                    <a class="social__link" href="#">Tweeter</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="copyright">
-                <b class="copyright__text">Разработано</b>
-                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-              </div>
+          </fieldset>
+          <fieldset class="form__more more">
+            <div class="more__wrap">
+              <lable for="more" class="more__title form__title">Доп</lable>
+              <textarea class="more__info" id="more" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
+          </fieldset>
+          <div class="form__addinfo-wrapper">
+            <p class="form__clarify">*Поля обязательны для заполнения</p>
+            <input class="form__submit form__submit--form button" type="submit" value="Отправить заказ">
+          </div>
+        </form>
+      </main>
+      <footer class="page-footer">
+        <section class="social-copyright">
+          <div class="social-copyright__wrapper">
+            <div class="social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link" href="#">Instagram</a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#">Facebook</a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#">Tweeter</a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright">
+              <b class="copyright__text">Разработано</b>
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </div>
           </div>
-        </footer>
-      </body>
-    </html>
+        </section>
+      </footer>
+    </body>
+  </html>

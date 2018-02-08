@@ -1,13 +1,13 @@
 .user-list {
   @include reset-indents;
   list-style: none;
-  width: 185px;
   border: 1px solid;
   margin: 0 auto;
 }
 
 .user-list__item {
   @include reset-indents;
+  @include mobile-center;
   margin-top: 33px;
   margin-bottom: 30px;
 }
@@ -18,24 +18,24 @@
   color: $black;
   font-size: 17px;
   line-height: 24px;
+  margin-left: 40px;
 }
 
 @media (min-width: $tablet-width) {
   .user-list {
     display: flex;
     flex-direction: row;
-    margin-right: 50px;
+    margin-left: 210px;
     width: 348px;
-    height: 89px;
   }
 
-  .user-list__item--search-tablet {
+  .user-list__item--search {
     @include reset-indents;
     width: 84px;
     border: 1px solid;
   }
 
-  .user-list__item--cart-tablet {
+  .user-list__item--cart {
     @include reset-indents;
     width: 264px;
   }

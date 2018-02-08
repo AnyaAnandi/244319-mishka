@@ -1,12 +1,12 @@
 .nav-list {
   @include reset-indents;
   list-style: none;
-  width: 185px;
   border: 1px solid;
   margin: 0 auto;
 }
 
 .nav-list__item {
+  @include mobile-center;
   padding-top: 33px;
   padding-bottom: 30px;
   border: 1px solid black;
@@ -16,16 +16,18 @@
   text-decoration: none;
   color: $black;
   line-height: 24px;
+  margin-left: 40px;
 }
 
 @media (min-width: $tablet-width) {
   .nav-list {
+    @include reset-indents;
+    @include tablet-center;
     order: 2;
     display: flex;
     flex-direction: row;
-    width: 348px;
-    height: 89px;
-    margin-left: -108px;
+    width: 334px;
+    margin-left: -110px;
   }
 
   .nav-list__item {

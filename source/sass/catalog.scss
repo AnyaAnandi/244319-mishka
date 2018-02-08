@@ -1,19 +1,16 @@
-@import "product.scss";
-
 .catalog__wrapper {
-  width: 260px;
-  margin: 0 auto;
+  @include mobile-center;
+}
+
+.catalog__title-bg {
+  background-color: $grey--lighter;
 }
 
 .catalog__title {
   @include reset-indents;
+  @include mobile-center;
   padding-top: 75px;
   padding-bottom: 65px;
-  background-color: $grey--lighter;
-}
-
-.title__wrap {
-  background-color: $grey--lighter;
 }
 
 .catalog__list {
@@ -27,12 +24,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .title__wrap {
-    background-color: $grey--lighter;
-  }
-
   .catalog__title {
-    margin-top: 105px;
+    @include tablet-center;
+    min-height: 224px;
   }
 
   .catalog__wrapper {
@@ -49,6 +43,7 @@
 
   .catalog__title {
     @include desktop-title;
-    margin-top: 103px;
+    @include desktop-center;
+    min-height: 250px;
   }
 }

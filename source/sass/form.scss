@@ -1,9 +1,3 @@
-@import "type.scss";
-@import "color";
-@import "personal-data";
-@import "contact-form";
-@import "more";
-
 .form {
   @include reset-indents;
   margin-top: 26px;
