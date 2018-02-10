@@ -38,12 +38,13 @@
     @include reset-indents;
     width: 111px;
     height: 46px;
+    margin-right: -111px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-header {
-    width: 1250px;
+    width: 100%;
   }
 
   .main-header__wrapper {

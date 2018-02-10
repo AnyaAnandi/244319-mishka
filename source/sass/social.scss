@@ -38,7 +38,7 @@
   .social-copyright__wrapper {
     @include tablet-center;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 }
 

@@ -2,11 +2,14 @@
 @import "variables.sccs";
 @import "scaffolding.scss";
 @import "mixin.scss";
+@import "button.scss";
 @import "main-header.scss";
 @import "nav-list.scss";
 @import "user-list.scss";
+@import "proposal-list.scss";
 @import "page-main.scss";
 @import "features.scss";
+@import "slider.scss";
 @import "comments.scss";
 @import "contacts.scss";
 @import "contact-form.scss";
@@ -17,7 +20,6 @@
 @import "production.scss";
 @import "form-page.scss";
 @import "footer.scss";
-@import "button.scss";
 @import "color.scss";
 @import "form.scss";
 @import "main-menu.scss";
@@ -26,5 +28,4 @@
 @import "personal-data.scss";
 @import "product.scss";
 @import "products.scss";
-@import "slider.scss";
 @import "type.scss";

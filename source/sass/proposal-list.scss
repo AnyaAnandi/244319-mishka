@@ -1,0 +1,47 @@
+.proposal-list {
+  @include reset-indents;
+  list-style: none;
+  display: none;
+}
+
+.proposal-list__link {
+  text-decoration: none;
+  color: $black;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .proposal-list {
+    @include tablet-center;
+    display: flex;
+    margin-top: -24px;
+  }
+
+  .proposal-list__item:first-child {
+    margin-right: 30px;
+  }
+
+  .proposal-list__item:last-child {
+    margin-left: auto;
+  }
+
+  .proposal-list__link--hide {
+    display: none;
+  }
+
+  .proposal-list__link--fontweight {
+    font-weight: normal;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .proposal-list {
+    @include desktop-center;
+    margin-top: 40px;
+  }
+
+  .proposal-list__link--hide {
+    display: block;
+  }
+}
