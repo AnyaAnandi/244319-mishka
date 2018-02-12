@@ -5,9 +5,18 @@
   height: 80px;
 }
 
+.social-copyright__wrapper {
+  @include mobile-center;
+}
+
+.social-copyright {
+  background-color: $grey--lighter;
+}
+
 .social__list {
   @include reset-indents;
   list-style: none;
+  display: flex;
 }
 
 .social__link {
@@ -18,4 +27,23 @@
   height: 20px;
   background-color: red;
   // что бы видно было ссылки
+  margin-right: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .social-copyright {
+    margin-top: 57px;
+  }
+
+  .social-copyright__wrapper {
+    @include tablet-center;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social-copyright__wrapper {
+    @include desktop-center;
+  }
 }

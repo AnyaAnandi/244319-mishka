@@ -1,17 +1,72 @@
-@import "form.scss";
+.form-page__wrapper {
+  @include mobile-center;
+}
+
+.form-page__title-bg {
+  background-color: $grey--lighter;
+  min-height: 178px;
+}
 
 .form-page__title {
   @include reset-indents;
+  @include mobile-center;
   padding-top: 75px;
   padding-bottom: 65px;
-  background-color: $grey--lighter;
 }
 
 .form-page__description {
   @include reset-indents;
+  @include mobile-center;
   margin-top: 29px;
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;
   color: $grey;
+}
+
+.form__addinfo-wrapper {
+  @include mobile-center;
+}
+
+@media (min-width: $tablet-width) {
+  .form-page__wrapper {
+    @include tablet-center;
+  }
+
+  .form-page__title-bg {
+    min-height: 226px;
+  }
+
+  .form-page__title {
+    @include tablet-center;
+  }
+
+  .form-page__description {
+    @include td-content;
+    @include tablet-center;
+    margin-top: 68px;
+  }
+
+  .form__addinfo-wrapper {
+    @include tablet-center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-page__wrapper {
+    @include desktop-center;
+  }
+
+  .form-page__title-bg {
+    min-height: 255px;
+  }
+
+  .form-page__title,
+  .form-page__description,
+  .form__addinfo-wrapper {
+    @include desktop-center;
+  }
 }

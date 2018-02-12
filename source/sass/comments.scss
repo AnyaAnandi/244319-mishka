@@ -1,5 +1,3 @@
-@import "slider.scss";
-
 .comments {
   color: $grey;
 }
@@ -29,10 +27,60 @@
 
 .comments__author-link {
   @include reset-indents;
-  margin-top: 15px;
   font-weight: normal;
 }
 
 .comments__add-comment {
   margin-top: 38px;
+}
+
+@media (min-width: $tablet-width) {
+  .comments {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .comments__title {
+    @include tablet-title;
+    order: -1;
+  }
+
+  .comments__content {
+    @include td-content;
+  }
+
+  .comments__add-comment {
+    order: -1;
+    width: 175px;
+    align-self: flex-start;
+    margin-top: 60px;
+  }
+
+  .comments__author {
+    margin-top: 50px;
+  }
+
+  .comments__toggles {
+    @include reset-indents;
+    width: 167px;
+    margin-left: auto;
+    margin-top: -60px;
+  }
+
+  .comments-toggle {
+    @include reset-indents;
+    width: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comments {
+    margin-left: 175px;
+  }
+
+  .comments__toggles {
+    margin-left: 705px;
+  }
 }

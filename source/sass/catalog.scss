@@ -1,10 +1,16 @@
-@import "product.scss";
+.catalog__wrapper {
+  @include mobile-center;
+}
+
+.catalog__title-bg {
+  background-color: $grey--lighter;
+}
 
 .catalog__title {
   @include reset-indents;
+  @include mobile-center;
   padding-top: 75px;
   padding-bottom: 65px;
-  background-color: $grey--lighter;
 }
 
 .catalog__list {
@@ -15,4 +21,29 @@
 .catalog__item {
   @include reset-indents;
   margin-top: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__title {
+    @include tablet-center;
+    min-height: 224px;
+  }
+
+  .catalog__wrapper {
+    @include tablet-center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    @include desktop-center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .catalog__title {
+    @include desktop-title;
+    @include desktop-center;
+    min-height: 250px;
+  }
 }

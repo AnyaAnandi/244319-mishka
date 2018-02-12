@@ -1,6 +1,7 @@
 .contact {
   @include reset-indents;
-  margin-top: 33px;
+  @include mobile-center;
+  margin-top: 20px;
 }
 
 .contact__title {
@@ -17,4 +18,39 @@
   font-weight: normal;
   color: $grey;
   opacity: 0.3;
+}
+
+.contact__wrap--additional {
+  @include mobile-center;
+}
+
+@media (min-width: $tablet-width) {
+  .contact {
+    width: 100%;
+    background-color: $grey--lighter;
+  }
+
+  .contact__wrap {
+    @include tablet-center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact__title {
+    width: 168px;
+  }
+
+  .contact__wrap--additional {
+    justify-content: space-between;
+  }
+
+  .form__clarify {
+    order: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact__wrap {
+    @include desktop-center;
+  }
 }

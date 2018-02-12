@@ -1,10 +1,44 @@
 .color {
   @include reset-indents;
-  margin-top: 33px;
+  @include mobile-center;
+  margin-top: 20px;
 }
 
 .color__title {
   @include reset-indents;
   color: $turquoise;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .color {
+    background-color: $grey--lighter;
+    width: 100%;
+  }
+
+  .color__wrap {
+    display: flex;
+
+    @include tablet-center;
+  }
+
+  .color__title {
+    width: 168px;
+  }
+
+  .color__wrap-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+  }
+
+  .color__checkbox {
+    width: 215px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .color__wrap {
+    @include desktop-center;
+  }
 }

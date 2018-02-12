@@ -1,0 +1,23 @@
+.page-footer__wrapper {
+  @include mobile-center;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    @include tablet-center;
+  }
+
+  .page-footer__logo {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    @include desktop-center;
+  }
+}

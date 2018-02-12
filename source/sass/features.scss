@@ -13,3 +13,55 @@
 .features__item {
   margin-top: 85px;
 }
+
+@media (min-width: $tablet-width) {
+  .features__title {
+    @include tablet-title;
+    margin-top: 116px;
+  }
+
+  .features__list {
+    font-size: 20px;
+    line-height: 22px;
+    display: flex;
+    width: 668px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .features__item {
+    width: 300px;
+    margin-right: 34px;
+  }
+
+  .features__item--handmade {
+    order: -2;
+  }
+
+  .features__item--eco {
+    order: -2;
+  }
+
+  .features__item--style {
+    order: -1;
+  }
+
+  .features__item--support {
+    order: -1;
+  }
+
+  .features__item--tablet {
+    margin-top: 110px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+    margin-left: 175px;
+  }
+
+  .features__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
