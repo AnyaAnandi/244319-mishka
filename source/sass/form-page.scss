@@ -4,20 +4,19 @@
 
 .form-page__title-bg {
   background-color: $grey--lighter;
-  min-height: 178px;
 }
 
 .form-page__title {
   @include reset-indents;
   @include mobile-center;
-  padding-top: 75px;
-  padding-bottom: 65px;
+  padding-top: 70px;
+  padding-bottom: 75px;
 }
 
 .form-page__description {
   @include reset-indents;
   @include mobile-center;
-  margin-top: 29px;
+  margin-top: 20px;
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;
@@ -28,6 +27,15 @@
   @include mobile-center;
 }
 
+.form__clarify {
+  @include reset-indents;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: $grey;
+  margin-top: 18px;
+}
+
 @media (min-width: $tablet-width) {
   .form-page__wrapper {
     @include tablet-center;
@@ -35,16 +43,19 @@
 
   .form-page__title-bg {
     min-height: 226px;
+    margin-top: -40px;
+    border-top: 1px solid $grey--lines;
   }
 
   .form-page__title {
     @include tablet-center;
+    margin-top: 23px;
   }
 
   .form-page__description {
     @include td-content;
     @include tablet-center;
-    margin-top: 68px;
+    margin-top: 72px;
   }
 
   .form__addinfo-wrapper {
@@ -52,6 +63,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: -65px;
+  }
+
+  .form__submit--form {
+    width: 228px;
+  }
+
+  .form__clarify {
+    @include td-content;
+    margin-top: 38px;
   }
 }
 
@@ -65,8 +86,17 @@
   }
 
   .form-page__title,
-  .form-page__description,
   .form__addinfo-wrapper {
-    @include desktop-center;
+    width: 700px;
+  }
+
+  .form-page__description {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 120px;
+  }
+
+  .form-page__title {
+    margin-top: 25px;
   }
 }

@@ -5,8 +5,8 @@
 .products__title {
   @include reset-indents;
   font-size: 25px;
-  margin-top: 33px;
-  margin-bottom: 10px;
+  margin-top: 28px;
+  margin-bottom: 8px;
 }
 
 .products__hit {
@@ -22,25 +22,33 @@
   line-height: 24px;
   font-weight: normal;
   color: $grey;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .products__data {
   @include reset-indents;
+  border-collapse: collapse;
   font-size: 15px;
   line-height: 20px;
   font-weight: normal;
   color: $grey;
-  margin-top: 30px;
+  margin-top: 15px;
+  width: 260px;
 }
 
 .products__field,
 .products__value {
-  padding-bottom: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $grey--lines;
 }
 
 .products__value {
-  padding-left: 30px;
+  padding-left: 24px;
+}
+
+.products__image {
+  margin-top: 30px;
 }
 
 .products__price {
@@ -48,8 +56,9 @@
   line-height: 24px;
   font-weight: bold;
   color: $grey;
-  margin-top: 30px;
-  margin-bottom: 28px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -62,59 +71,79 @@
   .products__title {
     @include tablet-title;
     width: 480px;
-    margin-top: 123px;
+    margin-top: 60px;
   }
 
   .products__hit {
     margin-left: auto;
-    width: 140px;
-    margin-top: 85px;
+    width: 100px;
+    margin-top: 70px;
     font-size: 17px;
+    text-align: center;
   }
 
   .products__wrapper {
     @include reset-indents;
     width: 292px;
-    margin-top: 40px;
+    margin-top: 15px;
   }
 
   .products__image {
     margin-left: auto;
-    margin-top: 40px;
+    margin-top: 50px;
+    width: 333px;
+    height: 404px;
   }
 
   .products__description {
     @include reset-indents;
     @include td-content;
+    margin-top: 30px;
+  }
+
+  .products__data {
+    margin-top: 35px;
+    width: 290px;
+  }
+
+  .products__value {
+    padding-left: 0;
   }
 
   .products__price {
     width: 668px;
-    margin-top: -15px;
+    margin-top: -110px;
     font-size: 20px;
     line-height: 24px;
+    text-align: left;
+    margin-left: 70px;
   }
 
   .products__order {
     width: 292px;
-    margin-top: 5px;
+    margin-top: -52px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .products {
     width: 1050px;
+    margin-top: 40px;
   }
 
   .products__title {
     @include desktop-title;
     width: 530px;
+    margin-top: 100px;
+    z-index: 100;
+    margin-left: 10px;
   }
 
   .products__hit {
-    margin-left: 0;
     order: -1;
     margin-right: 30px;
+    margin-top: 110px;
+    margin-left: 30px;
   }
 
   .products__wrapper {
@@ -130,8 +159,8 @@
 
   .products__price {
     width: 1050px;
-    margin-top: -135px;
-    margin-left: 175px;
+    margin-top: -110px;
+    margin-left: 250px;
   }
 
   .products__order {

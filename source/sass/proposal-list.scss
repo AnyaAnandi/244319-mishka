@@ -9,6 +9,14 @@
   color: $black;
   font-size: 15px;
   line-height: 24px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -19,7 +27,7 @@
   }
 
   .proposal-list__item:first-child {
-    margin-right: 30px;
+    margin-right: 65px;
   }
 
   .proposal-list__item:last-child {
@@ -38,7 +46,7 @@
 @media (min-width: $desktop-width) {
   .proposal-list {
     @include desktop-center;
-    margin-top: 40px;
+    margin-top: 15px;
   }
 
   .proposal-list__link--hide {

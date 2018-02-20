@@ -1,15 +1,26 @@
 .user-list {
   @include reset-indents;
   list-style: none;
-  border: 1px solid;
   margin: 0 auto;
 }
 
 .user-list__item {
   @include reset-indents;
   @include mobile-center;
-  margin-top: 33px;
-  margin-bottom: 30px;
+  position: relative;
+  padding-top: 33px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $grey--lines;
+  width: 100%;
+}
+
+.user-list__item--hover:hover .user-list__item-icon--color {
+  fill: $turquoise;
+  opacity: 1;
+}
+
+.user-list__item--hover:active {
+  opacity: 0.3;
 }
 
 .user-list__link {
@@ -18,7 +29,21 @@
   color: $black;
   font-size: 17px;
   line-height: 24px;
-  margin-left: 40px;
+  margin-left: 75px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.user-list__item-icon {
+  position: absolute;
+  left: 32px;
+  top: 35px;
+}
+
+.user-list__item-icon--color {
+  opacity: 0.2;
 }
 
 @media (min-width: $tablet-width) {
@@ -27,17 +52,49 @@
     flex-direction: row;
     margin-left: 116px;
     width: 348px;
+    min-height: 88px;
+  }
+
+  .user-list__item {
+    border: none;
+  }
+
+  .user-list__item-icon--active:active {
+    opacity: 0.6;
   }
 
   .user-list__item--search {
     @include reset-indents;
     width: 84px;
-    border: 1px solid;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 1px;
+      height: 88px;
+      background: $grey--lines;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 1px;
+      height: 88px;
+      background: $grey--lines;
+      top: 0;
+      left: 83px;
+    }
   }
 
   .user-list__item--cart {
-    @include reset-indents;
     width: 264px;
+  }
+
+  .user-list__link--hide {
+    font-size: 0;
   }
 }
 

@@ -3,7 +3,21 @@
   font-size: 17px;
   line-height: 24px;
   color: $black;
-  margin-top: 32px;
+  margin-top: 26px;
+  margin-left: 27px;
+}
+
+.product__image {
+  @include reset-indents;
+  width: 260px;
+  height: 195px;
+}
+
+.product__data {
+  width: 258px;
+  border: 1px solid $grey--lines;
+  margin-top: -3px;
+  padding-bottom: 20px;
 }
 
 .product__link {
@@ -17,8 +31,12 @@
   font-size: 13px;
   font-weight: normal;
   color: $grey;
-  margin-top: 18px;
-  margin-bottom: 56px;
+  margin-top: 15px;
+  margin-bottom: 21px;
+  margin-left: 27px;
+  padding-bottom: 25px;
+  width: 205px;
+  border-bottom: 1px solid $grey--lines;
 }
 
 .product__price {
@@ -26,34 +44,54 @@
   text-decoration: none;
   font-size: 15px;
   line-height: 24px;
+  margin-left: 27px;
+  margin-right: 110px;
 }
 
 @media (min-width: $tablet-width) {
   .product {
     display: flex;
     width: 668px;
-    margin-top: 80px;
+    flex-wrap: no-wrap;
   }
 
   .product__image {
     width: 334px;
+    height: 334px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .product__data {
+    width: 334px;
+    margin-top: 0;
   }
 
   .product__title {
     @include reset-indents;
     font-size: 20px;
     line-height: 24px;
+    padding-top: 26px;
+    padding-left: 25px;
   }
 
   .product__description {
-    margin-bottom: 86px;
+    margin-top: 5px;
+    width: 266px;
     font-size: 15px;
     line-height: 30px;
+    padding-bottom: 175px;
+  }
+
+  .product__description--twolinestitle {
+    padding-bottom: 148px;
   }
 
   .product__price {
     font-size: 17px;
     line-height: 24px;
+    margin-left: 30px;
+    margin-right: 160px;
   }
 }
 
@@ -61,7 +99,26 @@
   .product {
     display: flex;
     flex-direction: column;
+    flex-wrap: no-wrap;
     width: 316px;
-    margin-top: 128px;
+  }
+
+  .product__image {
+    width: 316px;
+    height: 462px;
+  }
+
+  .product__data {
+    width: 314px;
+    padding-bottom: 26px;
+    margin-top: -3px;
+  }
+
+  .product__description {
+    padding-bottom: 35px;
+  }
+
+  .product__description--twolinestitle {
+    padding-bottom: 11px;
   }
 }

@@ -1,18 +1,12 @@
-.main-nav__toggle {
-  @include reset-indents;
-  display: block;
-  width: 20px;
-  height: 14px;
-  font-size: 0;
-  background-color: green;
-  //просто  что бы видно было
-
-  margin-top: -50px;
-  margin-left: 265px;
-  margin-bottom: 35px;
+.main-nav--close {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav {
+    display: block;
+  }
+
   .main-nav__wrapper {
     @include reset-indents;
     @include mobile-center;
@@ -20,19 +14,11 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-
-  .main-nav__toggle {
-    display: none;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__wrapper {
     width: 1050px;
     justify-content: space-between;
-  }
-
-  .main-nav__toggle {
-    display: none;
   }
 }

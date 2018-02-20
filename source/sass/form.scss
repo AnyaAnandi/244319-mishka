@@ -4,15 +4,6 @@
   line-height: 28px;
 }
 
-.form__clarify {
-  @include reset-indents;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: normal;
-  color: $grey;
-  margin-top: 18px;
-}
-
 .form__submit {
   @include reset-indents;
   margin-top: 31px;
@@ -24,4 +15,14 @@
   background-color: transparent;
   border: 2px solid $grey;
   color: $grey;
+}
+
+.form__color {
+  margin-top: 34px;
+  margin-bottom: 30px;
+}
+
+.form__contact {
+  margin-top: 10px;
+  margin-bottom: 25px;
 }

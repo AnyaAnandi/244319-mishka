@@ -4,9 +4,33 @@
 }
 
 .main-menu__item {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  @include reset-indents;
+  height: 103px;
   background-color: $turquoise;
+
+  &:hover {
+    height: 108px;
+  }
+
+  &:hover .main-menu__link span {
+    padding-top: 20px;
+  }
+
+  &:hover .main-menu__link--interior::before {
+    top: 20px;
+    opacity: 0.7;
+  }
+
+  &:hover .main-menu__link--toy::before {
+    opacity: 0.7;
+    top: 15px;
+  }
+
+  &:active .main-menu__link--interior::before,
+  &:active .main-menu__link--toy::before,
+  &:active span {
+    opacity: 0.3;
+  }
 }
 
 .main-menu__item--bg-color {
@@ -14,12 +38,44 @@
 }
 
 .main-menu__link {
+  @include reset-indents;
   @include mobile-center;
+  position: relative;
   text-decoration: none;
   font-size: 19px;
   line-height: 24px;
   color: $white;
   display: block;
+}
+
+.main-menu__link span {
+  padding-top: 25px;
+  display: block;
+  width: 130px;
+}
+
+.main-menu__link--interior::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 62px;
+  background-image: url("../img/icon-interior.svg");
+  opacity: 0.5;
+  right: 5px;
+  top: 25px;
+}
+
+.main-menu__link--toy::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/icon-toy.svg");
+  opacity: 0.5;
+  right: 0;
+  top: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -30,12 +86,36 @@
   }
 
   .main-menu__item {
-    width: 525px;
+    width: 334px;
+  }
+
+  .main-menu__link {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-menu {
     @include desktop-center;
+  }
+
+  .main-menu__item {
+    width: 525px;
+  }
+
+  .main-menu__link {
+    @include desktop-center;
+    margin-left: 40px;
+  }
+
+  .main-menu__link--interior::before {
+    top: 30px;
+    left: 408px;
+  }
+
+  .main-menu__link--toy::before {
+    top: 30px;
+    left: 388px;
   }
 }

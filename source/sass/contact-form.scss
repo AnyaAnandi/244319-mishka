@@ -1,13 +1,45 @@
 .contact {
   @include reset-indents;
   @include mobile-center;
-  margin-top: 20px;
+  margin-top: 30px;
+  border: none;
 }
 
 .contact__title {
   @include reset-indents;
   color: $turquoise;
   text-transform: uppercase;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 198px;
+    height: 1px;
+    background: $turquoise;
+    top: 12.5px;
+    left: 62px;
+  }
+}
+
+.contact__title--email::before {
+  width: 179px;
+  left: 81px;
+}
+
+.contact label + input {
+  display: block;
+  margin-top: 40px;
+}
+
+.contact__wrap--email {
+  margin-top: 28px;
+}
+
+.contact__wrap {
+  padding-bottom: 17px;
+  border-bottom: 2px solid black;
 }
 
 .contact__phone[placeholder],
@@ -18,6 +50,8 @@
   font-weight: normal;
   color: $grey;
   opacity: 0.3;
+  padding-top: 15px;
+  border: none;
 }
 
 .contact__wrap--additional {
@@ -28,16 +62,51 @@
   .contact {
     width: 100%;
     background-color: $grey--lighter;
+    padding-bottom: 46px;
   }
 
   .contact__wrap {
     @include tablet-center;
     display: flex;
     flex-direction: row;
+    margin-top: 47px;
+    border: none;
   }
 
   .contact__title {
     width: 168px;
+    margin-top: 13px;
+    margin-right: 20px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 2px;
+      background: $black;
+      top: 40px;
+      left: 166px;
+      width: 501px;
+    }
+  }
+
+  .contact__phone,
+  .contact__email {
+    font-size: 19px;
+    background: transparent;
+  }
+
+  .contact__phone[placeholder],
+  .contact__email[placeholder] {
+    font-size: 19px;
+  }
+
+  .contact__wrap--email {
+    margin-top: 18px;
   }
 
   .contact__wrap--additional {
@@ -52,5 +121,23 @@
 @media (min-width: $desktop-width) {
   .contact__wrap {
     @include desktop-center;
+  }
+
+  .contact {
+    padding-top: 50px;
+  }
+
+  .contact__title {
+    margin-left: 65px;
+    margin-right: -40px;
+
+    &::after {
+      left: 110px;
+      width: 700px;
+    }
+  }
+
+  .contact__wrap--email {
+    margin-top: 18px;
   }
 }

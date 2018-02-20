@@ -2,12 +2,26 @@
   @include reset-indents;
   @include mobile-center;
   margin-top: 20px;
+  border: none;
 }
 
 .personal-data__title {
   @include reset-indents;
+  position: relative;
   color: $turquoise;
   text-transform: uppercase;
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 198px;
+    height: 1px;
+    background: $turquoise;
+    top: 12.5px;
+    left: 62px;
+  }
 }
 
 .personal-data__name[placeholder],
@@ -19,11 +33,31 @@
   font-weight: normal;
   color: $grey;
   opacity: 0.3;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.personal-data__label label {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.personal-data__label label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 260px;
+  height: 2px;
+  background: $black;
+  top: 73px;
 }
 
 @media (min-width: $tablet-width) {
   .personal-data {
-    margin-top: 20px;
+    margin-top: 60px;
+    margin-bottom: 35px;
   }
 
   .personal-data__wrap {
@@ -33,16 +67,91 @@
 
   .personal-data__title {
     width: 168px;
+
+    &::before {
+      display: none;
+    }
   }
 
-  .personal-data__label {
+  .personal-data__name[placeholder],
+  .personal-data__surname[placeholder],
+  .personal-data__patronymic[placeholder] {
+    font-size: 19px;
+    padding-left: 42px;
+    padding-top: 0;
+  }
+
+  .personal-data__label label {
+    font-size: 19px;
+    width: 501px;
     display: flex;
-    flex-direction: column;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .personal-data__lname::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    background: $black;
+    top: 40px;
+    left: 72px;
+    width: 428px;
+  }
+
+  .personal-data__lsurname {
+    margin-top: 36px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 2px;
+      background: $black;
+      top: 40px;
+      left: 124px;
+      width: 375px;
+    }
+  }
+
+  .personal-data__lpatronymic {
+    margin-top: 40px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 2px;
+      background: $black;
+      top: 40px;
+      left: 124px;
+      width: 375px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .personal-data__wrap {
     width: 1050px;
+  }
+
+  .personal-data__title {
+    margin-left: 65px;
+  }
+
+  .personal-data__label label {
+    margin-left: -55px;
+  }
+
+  .personal-data__lname::after {
+    width: 626px;
+  }
+
+  .personal-data__lsurname::after,
+  .personal-data__lpatronymic::after {
+    width: 573px;
   }
 }

@@ -1,13 +1,30 @@
 .more {
   @include reset-indents;
   @include mobile-center;
-  margin-top: 20px;
+  //margin-top: 20px;
+  border: none;
+}
+
+.more lable + textarea {
+  display: block;
 }
 
 .more__title {
   @include reset-indents;
   color: $turquoise;
   text-transform: uppercase;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 198px;
+    height: 1px;
+    background: $turquoise;
+    top: 12.5px;
+    left: 62px;
+  }
 }
 
 .more__info[placeholder] {
@@ -17,21 +34,73 @@
   font-weight: normal;
   color: $grey;
   opacity: 0.3;
+  margin-top: 20px;
+  padding-top: 13px;
+  padding-left: 20px;
+  border: none;
+}
+
+.more__wrap {
+  position: relative;
+}
+
+.more__wrap::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 256px;
+  height: 140px;
+  border: 2px solid $black;
+  opacity: 1;
+  top: 47px;
 }
 
 @media (min-width: $tablet-width) {
   .more__wrap {
     @include tablet-center;
     display: flex;
+    margin-top: 24px;
+    margin-bottom: 20px;
   }
 
   .more__title {
     width: 168px;
+    margin-top: 14px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .more__wrap::before {
+    width: 499px;
+    height: 138px;
+    right: 0;
+    top: 0;
+  }
+
+  .more__info[placeholder] {
+    padding-top: 0;
+    font-size: 19px;
+    width: 400px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .more__wrap {
     width: 1050px;
+  }
+
+  .more__wrap::before {
+    left: 175px;
+    width: 700px;
+  }
+
+  .more__title {
+    margin-left: 65px;
+  }
+
+  .more__info[placeholder] {
+    margin-left: -60px;
   }
 }

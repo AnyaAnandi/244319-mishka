@@ -2,7 +2,8 @@
   @include reset-indents;
   margin-top: 39px;
   background-color: $grey--lighter;
-  height: 80px;
+  border-bottom: 1px solid $grey--lines;
+  padding-bottom: 25px;
 }
 
 .social-copyright__wrapper {
@@ -15,19 +16,25 @@
 
 .social__list {
   @include reset-indents;
+  @include mobile-center;
   list-style: none;
+  width: 160px;
   display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  margin: 0 auto;
 }
 
 .social__link {
   @include reset-indents;
   display: inline-block;
-  font-size: 0;
   width: 20px;
   height: 20px;
-  background-color: red;
-  // что бы видно было ссылки
   margin-right: 40px;
+}
+
+.social__link--fb {
+  margin-top: -8px;
 }
 
 @media (min-width: $tablet-width) {
@@ -39,6 +46,15 @@
     @include tablet-center;
     display: flex;
     justify-content: space-between;
+  }
+
+  .social {
+    margin-left: 80px;
+  }
+
+  .social__list {
+    padding-top: 24px;
+    padding-bottom: 40px;
   }
 }
 
